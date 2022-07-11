@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BookshelfApp</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+        <!-- AddBtn -->
+        <div class="adBtn">
+            <button id="adBtn">AddBook <b>+</b></button>
+        </div>
+
+        <!-- Main -->
+        <div class="title">
+            <h1>BookShelf</h1>
+        </div>
+        <hr>
+        <div class="logo">
+            <img src="./Img/logo.png" alt="Logo" width="150px">
+            <div class="logo-desc">
+                <h1>BookShelf</h1>
+                <p id="date"></p>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <!-- Form -->
+    <div class="floating">
+        <form>
+            <label>Add Book</label>
+            <br><br>
+            <input type="text" id="jdl" name="Title" placeholder="Title">
+            <br><br>
+            <input type="text" id="ath" name="Author" placeholder="Author">
+            <br><br>
+            <input type="number" id="yr" name="Year" placeholder="Year" min="1000" max="9999">
+            <br><br>
+            <input type="checkbox">
+            <label>Done Reading ?</label>
+            <br><br>
+            <button class="button">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="./JavaScript/time.js"></script>
+
+</html>
