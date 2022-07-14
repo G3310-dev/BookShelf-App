@@ -12,14 +12,13 @@
     <div class="content">
         <!-- AddBtn -->
         <div class="adBtn">
-            <button id="adBtn">AddBook <b>+</b></button>
+            <button id="addBtn">AddBook <b>+</b></button>
         </div>
 
         <!-- Main -->
         <div class="title">
             <h1>BookShelf</h1>
         </div>
-        <hr>
         <div class="logo">
             <img src="./Img/logo.png" alt="Logo" width="150px">
             <div class="logo-desc">
@@ -27,12 +26,29 @@
                 <p id="date"></p>
             </div>
         </div>
-        <hr>
     </div>
+    <!-- BookList -->
+    <div class="container">
+        <h1>Unfinished Books</h1>
+        <div id="unReadBook"></div>
+    </div>
+    <div class="container">
+        <h1>Finished Books</h1>
+        <!-- <article class="item">
+            <h3>Book Title</h3>
+            <p>Writer: John Doe</p>
+            <p>Year: 2002</p>
 
+            <div class="action">
+                <button class="delete">Unreaded X </button>
+                <button class="remove">🗑</button>
+            </div>
+        </article> -->
+        <div id="readedBook"></div>
+    </div>
     <!-- Form -->
-    <div class="floating">
-        <form>
+    <div class="floating visibl" id="floating">
+        <form id="formBook">
             <label>Add Book</label>
             <br><br>
             <input type="text" id="jdl" name="Title" placeholder="Title">
@@ -41,13 +57,17 @@
             <br><br>
             <input type="number" id="yr" name="Year" placeholder="Year" min="1000" max="9999">
             <br><br>
-            <input type="checkbox">
+            <input type="checkbox" id="cmplt">
             <label>Done Reading ?</label>
             <br><br>
             <button class="button">Submit</button>
         </form>
     </div>
 </body>
+
+<script src="./JavaScript/function.js"></script>
+<script src="./JavaScript/container.js"></script>
 <script src="./JavaScript/time.js"></script>
+<script src="./JavaScript/db.js"></script>
 
 </html>
