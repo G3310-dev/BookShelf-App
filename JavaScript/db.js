@@ -34,13 +34,19 @@ form.addEventListener('submit', function (event) {
     const complete = document.getElementById('cmplt').checked;
     const date = new Date();
     const id = Math.round(date.getTime());
-
+    const url = document.getElementById('link').value;
     const newUserData = {
         id: id,
         title: title,
         author: author,
         year: year,
+        link: url,
         isComplete: complete,
     };
-    putUserList(newUserData);
+    if (title !== '' && author !== '' && year !== '') {
+        putUserList(newUserData);
+        alert('Book Added')
+    } else {
+        alert('Please Fill All Data !')
+    }
 });

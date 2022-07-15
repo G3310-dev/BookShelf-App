@@ -1,46 +1,46 @@
 n = new Date();
 y = n.getFullYear();
-m =  n.getMonth() + 1;
+m = n.getMonth() + 1;
 d = n.getDate();
 t = "";
 
 const x = () => {
     switch (m) {
         case (1):
-            t =  "January, ";
+            t = "January, ";
             break;
         case (2):
-            t =  "Febuary, ";
+            t = "Febuary, ";
             break;
         case (3):
-            t =  "March, ";
+            t = "March, ";
             break;
         case (4):
-            t =  "April, ";
+            t = "April, ";
             break;
         case (5):
-            t =  "May, ";
+            t = "May, ";
             break;
         case (6):
-            t =  "June, ";
+            t = "June, ";
             break;
         case (7):
-            t =  "July, ";
+            t = "July, ";
             break;
         case (8):
-            t =  "August, ";
+            t = "August, ";
             break;
         case (9):
-            t =  "September, ";
+            t = "September, ";
             break;
         case (10):
-            t =  "October, ";
+            t = "October, ";
             break;
         case (11):
-            t =  "November, ";
+            t = "November, ";
             break;
         case (12):
-            t =  "Decemmer, ";
+            t = "Decemmer, ";
             break;
     }
 }

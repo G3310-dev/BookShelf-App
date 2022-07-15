@@ -10,14 +10,11 @@
 
 <body>
     <div class="content">
-        <!-- AddBtn -->
         <div class="adBtn">
-            <button id="addBtn">AddBook <b>+</b></button>
+            <button id="addBtn">AddBook +</button>
         </div>
-
-        <!-- Main -->
-        <div class="title">
-            <h1>BookShelf</h1>
+        <div class="title" id="about">
+            <h1><img src="./Img/info.png" alt="Info" width="20px" height="20px" id="info"> BookShelf</h1>
         </div>
         <div class="logo">
             <img src="./Img/logo.png" alt="Logo" width="150px">
@@ -27,33 +24,31 @@
             </div>
         </div>
     </div>
-    <!-- BookList -->
+    <div class="container inside">
+        <h1>Search</h1>
+        <div class="search">
+            <input id="src" type="text" name="Search" placeholder="Search">
+            <button id="searchEnter"><img src="./Img/search.png" alt="Search" width="15x"></button>
+        </div>
+        <div id="sorted"></div>
+    </div>
     <div class="container">
         <h1>Unfinished Books</h1>
         <div id="unReadBook"></div>
     </div>
     <div class="container">
         <h1>Finished Books</h1>
-        <!-- <article class="item">
-            <h3>Book Title</h3>
-            <p>Writer: John Doe</p>
-            <p>Year: 2002</p>
-
-            <div class="action">
-                <button class="delete">Unreaded X </button>
-                <button class="remove">🗑</button>
-            </div>
-        </article> -->
         <div id="readedBook"></div>
     </div>
-    <!-- Form -->
     <div class="floating visibl" id="floating">
-        <form id="formBook">
+        <form id="formBook" class="form">
             <label>Add Book</label>
             <br><br>
             <input type="text" id="jdl" name="Title" placeholder="Title">
             <br><br>
             <input type="text" id="ath" name="Author" placeholder="Author">
+            <br><br>
+            <input type="text" id="link" name="Link" placeholder="Book Link https:// (optional)">
             <br><br>
             <input type="number" id="yr" name="Year" placeholder="Year" min="1000" max="9999">
             <br><br>
@@ -63,11 +58,21 @@
             <button class="button">Submit</button>
         </form>
     </div>
+    <div class="about" id="abt">
+        <img src="./Img/profile.png" alt="100px">
+        <h2>About Me !</h2>
+        <p>Glenn Wilson Hardian</p>
+        <p>Age: 13</p>
+        <h4>This web was made to fullfil dicoding <br> front end class submission</h4>
+        <br>
+        <h3>Tap anywhere to continue</h3>
+    </div>
 </body>
 
 <script src="./JavaScript/function.js"></script>
 <script src="./JavaScript/container.js"></script>
 <script src="./JavaScript/time.js"></script>
 <script src="./JavaScript/db.js"></script>
+<script src="./JavaScript/change.js"></script>
 
 </html>
